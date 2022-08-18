@@ -24,6 +24,8 @@ To submit a change for inclusion, please do the following:
 * If the "how" or "why" of your changes may be unclear during review, preemptively open a comment on that line of code in the PR, explaining your
   reasoning.
 * Ensure that all tests are passing, and if your code is introducing a new feature, include test coverage for that feature.
+  * If a change is introduced but not automatically tested, you must define a Testing section in your PR describing how to test your additions and why
+    it isn't automated.
 * Code changes must be accompanied by the appropriate documentation updates or additions.
 
 ### How to review
@@ -35,7 +37,8 @@ Consider the following when reviewing a PR:
 * Has the code introduced new, unwelcome behavior or dependencies?
 * Could the code be written to be more readable?
 * Could the code be written to be more modular/reusable without adding unneeded complexity?
-* Are tests passing, and is there sufficient test coverage (i.e. do the tests cover the fixed bug or newly introduced feature(s))?
+* Are tests passing, and is there sufficient test coverage (i.e. do the tests cover the fixed bug or newly introduced feature(s))? If tests are not
+  automated, is there a reasonable justification documented or otherwise identified aside from the time it takes to write the automation?
 
 All conversations should be reviewed and resolved, and all checkboxes should be checked or discussed (i.e. noting that you don't consider them a
 requirement for approval or that your approval is conditional on outstanding tasks being completed) prior to completing your review.
@@ -43,7 +46,8 @@ requirement for approval or that your approval is conditional on outstanding tas
 Some PRs may change functionality which isn't tested during that PR's tests, like a CI specific change that is only run on commits to `main`. These
 should be tested manually in as close to the CI environment as possible (Consider running it in the same docker image that CI uses, render any
 generated code, etc.). Changes which do not exhibit this behavior may optionally be tested locally by the reviewer, but it is not required. The PR
-author should indicate explicitly if they expect the reviewer to perform local testing.
+author should indicate explicitly if they expect the reviewer to perform local testing by including a testing section with details included in their
+PR.
 
 By default, the author of a PR should be the one to merge it (either by enabling auto-merge, or manually). After completing your review, make sure to
 approve the GitHub PR, as well as any related Wrike approval workflows or tasks, but **refrain from merging the commit** unless the PR author
