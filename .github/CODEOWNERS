@@ -2,7 +2,7 @@
 * @jonzeolla
 
 # GitHub automation oversight
-.github/* @SeisoLLC/eyes
+.github/** @SeisoLLC/eyes
 
 # Sensitive files
 LICENSE @SeisoLLC/eyes
