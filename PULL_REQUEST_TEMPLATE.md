@@ -1,5 +1,7 @@
 # Contributor Comments
 
+[Please insert a description of the change here]
+
 ## Pull Request Checklist
 
 Thank you for submitting a contribution to our project!
