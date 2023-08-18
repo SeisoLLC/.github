@@ -14,6 +14,7 @@ and comply with the below requirements:
 - [ ] If manual testing is needed in order to validate the changes, provide a testing plan and the expected results.
 - [ ] If there is an issue associated with your Pull Request, link the issue to the PR.
 - [ ] Validate that documentation is accurate and aligned to any project updates or additions.
-- [ ] Add a task permalink for tracking.
 
-[Permalink](replace with permalink URL)
+<!-- 
+Wrike: [replace this text with permalink URL] 
+-->
